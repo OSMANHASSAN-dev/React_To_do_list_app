@@ -1,0 +1,38 @@
+/* This file is primarily for importing Tailwind CSS.
+  If you have a `tailwind.config.js` set up correctly,
+  Tailwind will generate all its utility classes based on your usage.
+  
+  You might only need this if you're using a PostCSS setup or 
+  if you want to include some base styles that aren't easily
+  covered by Tailwind utilities.
+
+  For a basic Create React App with Tailwind, you'd typically
+  install Tailwind and then configure your `tailwind.config.js`
+  to scan your `src` folder for classes.
+
+  Example content for a minimal App.css to include Tailwind:
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Optional: Add any global custom styles here if needed,
+  but prefer Tailwind utility classes for most styling.
+*/
+body {
+  font-family: 'Inter', sans-serif; /* Using Inter font as per instructions */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* If you want to ensure the root element takes full height for min-h-screen to work
+*/
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically if it's not too tall */
+}
